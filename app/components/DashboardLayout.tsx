@@ -192,10 +192,10 @@ function Sidebar() {
       <div className="px-5 py-5 border-b border-slate-100">
         <div className="flex items-center gap-3">
           <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-slate-800 to-slate-600 flex items-center justify-center shadow-md flex-shrink-0">
-            <span className="text-white font-bold text-lg leading-none">N</span>
+            <span className="text-white font-bold text-lg leading-none">D</span>
           </div>
           <div>
-            <h1 className="text-base font-bold text-slate-900 leading-tight">Noa&apos;s Café</h1>
+            <h1 className="text-base font-bold text-slate-900 leading-tight">Demo Café</h1>
             <p className="text-xs text-slate-400 font-medium mt-0.5">Analytics Dashboard</p>
           </div>
         </div>
