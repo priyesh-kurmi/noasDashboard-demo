@@ -1,15 +1,14 @@
 import type { NextConfig } from "next";
+import webpack from "webpack";
 
 const nextConfig: NextConfig = {
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.resolve.fallback = {
-        ...config.resolve.fallback,
-        fs: false,
-        path: false,
-        crypto: false,
-      };
-    }
+  webpack: (config, opts) => {
+    config.plugins.push(
+      new webpack.DefinePlugin({
+        __dirname: JSON.stringify("/"),
+        __filename: JSON.stringify("app"),
+      })
+    );
     return config;
   },
 };
