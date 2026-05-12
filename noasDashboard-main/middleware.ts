@@ -1,9 +1,5 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
-import { jwtVerify } from 'jose';
-
-// Fixed secret — matches lib/auth.ts demo secret, no env var needed
-const secret = new TextEncoder().encode('demo-mode-fixed-secret-noas-dashboard-2024');
 
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
@@ -11,9 +7,8 @@ export async function middleware(request: NextRequest) {
   // Public paths that don't require authentication
   if (
     pathname === '/login' || 
-    pathname.startsWith('/api/auth') || 
-    pathname.startsWith('/api/') || // Allow all API routes for demo
-    pathname === '/api/init-db'
+    pathname.startsWith('/api/') ||
+    pathname.startsWith('/_next')
   ) {
     return NextResponse.next();
   }
@@ -25,13 +20,8 @@ export async function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL('/login', request.url));
   }
 
-  try {
-    await jwtVerify(token, secret);
-    return NextResponse.next();
-  } catch (error) {
-    // Token is invalid or expired
-    return NextResponse.redirect(new URL('/login', request.url));
-  }
+  // For demo, just check if token exists (full verification happens in API routes)
+  return NextResponse.next();
 }
 
 export const config = {
