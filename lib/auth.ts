@@ -3,9 +3,9 @@ import { SignJWT, jwtVerify } from 'jose';
 import { cookies } from 'next/headers';
 
 // Fixed secret baked in — no environment variable needed for demo
-const DEMO_SECRET = new TextEncoder().encode('demo-mode-fixed-secret-noas-dashboard-2024');
+const DEMO_SECRET = new TextEncoder().encode('demo-mode-fixed-secret-business-dashboard-2024');
 
-const DEMO_EMAIL = 'demo@noas.uk';
+const DEMO_EMAIL = 'demo@dashboard.com';
 const DEMO_PASSWORD = 'demo1234';
 
 export async function login(email: string, password: string) {

@@ -2,9 +2,9 @@
 import { NextResponse } from "next/server";
 export async function GET() {
   const storePerformance = [
-    { rank:1,storeName:"Noas Cafe Manchester",platform:"tmp",revenue:54231.5,transactions:2134,avgTransactionValue:25.42,performanceScore:87,consistency:82,growth:9.2 },
-    { rank:2,storeName:"Noas Cafe Leeds",platform:"tmp",revenue:48670.25,transactions:1921,avgTransactionValue:25.33,performanceScore:79,consistency:76,growth:7.1 },
-    { rank:3,storeName:"Noas Cafe Birmingham",platform:"tmp",revenue:39820.0,transactions:1583,avgTransactionValue:25.15,performanceScore:68,consistency:71,growth:5.4 },
+    { rank:1,storeName:"Demo Cafe Manchester",platform:"tmp",revenue:54231.5,transactions:2134,avgTransactionValue:25.42,performanceScore:87,consistency:82,growth:9.2 },
+    { rank:2,storeName:"Demo Cafe Leeds",platform:"tmp",revenue:48670.25,transactions:1921,avgTransactionValue:25.33,performanceScore:79,consistency:76,growth:7.1 },
+    { rank:3,storeName:"Demo Cafe Birmingham",platform:"tmp",revenue:39820.0,transactions:1583,avgTransactionValue:25.15,performanceScore:68,consistency:71,growth:5.4 },
   ];
   return NextResponse.json({
     storePerformance,
@@ -27,9 +27,9 @@ export async function GET() {
     performanceScores: { overall:78,revenue:82,consistency:76,growth:7.2 },
     salesSummary: { totalRevenue:142721.75,totalOrders:5638,avgOrderValue:25.32,storeCount:3 },
     spendPerSite: [
-      {storeName:"Noas Cafe Manchester",spend:12430.5,orders:498,avgOrder:24.96},
-      {storeName:"Noas Cafe Leeds",spend:10820.0,orders:433,avgOrder:24.99},
-      {storeName:"Noas Cafe Birmingham",spend:8940.25,orders:358,avgOrder:24.97},
+      {storeName:"Demo Cafe Manchester",spend:12430.5,orders:498,avgOrder:24.96},
+      {storeName:"Demo Cafe Leeds",spend:10820.0,orders:433,avgOrder:24.99},
+      {storeName:"Demo Cafe Birmingham",spend:8940.25,orders:358,avgOrder:24.97},
     ],
     scoringExplanation: {
       description:"Performance scores combine revenue, transaction volume, and consistency",

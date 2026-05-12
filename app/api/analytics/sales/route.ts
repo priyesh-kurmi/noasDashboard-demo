@@ -1,12 +1,12 @@
 ﻿// DEMO MODE — hardcoded demo data only
 import { NextRequest, NextResponse } from "next/server";
 
-const DEMO_STORES = ["Noas Cafe Manchester", "Noas Cafe Leeds", "Noas Cafe Birmingham"];
+const DEMO_STORES = ["Demo Cafe Manchester", "Demo Cafe Leeds", "Demo Cafe Birmingham"];
 
 const STORES = [
-  { storeName: "Noas Cafe Manchester", platform: "tmp", totalSales: 54231.5, transactions: 2134, avgTransaction: 25.42, bestProduct: "Flat White" },
-  { storeName: "Noas Cafe Leeds", platform: "tmp", totalSales: 48670.25, transactions: 1921, avgTransaction: 25.33, bestProduct: "Cappuccino" },
-  { storeName: "Noas Cafe Birmingham", platform: "tmp", totalSales: 39820.0, transactions: 1583, avgTransaction: 25.15, bestProduct: "Croissant" },
+  { storeName: "Demo Cafe Manchester", platform: "tmp", totalSales: 54231.5, transactions: 2134, avgTransaction: 25.42, bestProduct: "Flat White" },
+  { storeName: "Demo Cafe Leeds", platform: "tmp", totalSales: 48670.25, transactions: 1921, avgTransaction: 25.33, bestProduct: "Cappuccino" },
+  { storeName: "Demo Cafe Birmingham", platform: "tmp", totalSales: 39820.0, transactions: 1583, avgTransaction: 25.15, bestProduct: "Croissant" },
 ];
 
 const PRODUCT_BREAKDOWN = [

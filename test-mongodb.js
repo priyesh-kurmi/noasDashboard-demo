@@ -19,7 +19,7 @@ async function testConnection() {
     console.log('3. ✅ Connected successfully!');
     
     console.log('4. Testing database access...');
-    const db = client.db('noas_dashboard');
+    const db = client.db('business_dashboard');
     const collections = await db.listCollections().toArray();
     
     console.log('5. ✅ Database accessible!');

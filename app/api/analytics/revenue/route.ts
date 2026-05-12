@@ -2,10 +2,10 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const DEMO_STORES = [
-  { storeName: "Noas Cafe Manchester", platform: "tmp" },
-  { storeName: "Noas Cafe Leeds", platform: "tmp" },
-  { storeName: "Noas Cafe Birmingham", platform: "tmp" },
-  { storeName: "Noas Cafe Manchester", platform: "paypal" },
+  { storeName: "Demo Cafe Manchester", platform: "tmp" },
+  { storeName: "Demo Cafe Leeds", platform: "tmp" },
+  { storeName: "Demo Cafe Birmingham", platform: "tmp" },
+  { storeName: "Demo Cafe Manchester", platform: "paypal" },
 ];
 
 const MONTHLY_REVENUE = [
@@ -47,9 +47,9 @@ export async function GET(request: NextRequest) {
   ];
 
   const revenueByStore = [
-    { storeName: "Noas Cafe Manchester", platform: "tmp", revenue: Math.round(totalRevenue * 0.38 * 100) / 100, transactions: Math.round(totalCount * 0.38), percentage: 38 },
-    { storeName: "Noas Cafe Leeds", platform: "tmp", revenue: Math.round(totalRevenue * 0.34 * 100) / 100, transactions: Math.round(totalCount * 0.34), percentage: 34 },
-    { storeName: "Noas Cafe Birmingham", platform: "tmp", revenue: Math.round(totalRevenue * 0.28 * 100) / 100, transactions: Math.round(totalCount * 0.28), percentage: 28 },
+    { storeName: "Demo Cafe Manchester", platform: "tmp", revenue: Math.round(totalRevenue * 0.38 * 100) / 100, transactions: Math.round(totalCount * 0.38), percentage: 38 },
+    { storeName: "Demo Cafe Leeds", platform: "tmp", revenue: Math.round(totalRevenue * 0.34 * 100) / 100, transactions: Math.round(totalCount * 0.34), percentage: 34 },
+    { storeName: "Demo Cafe Birmingham", platform: "tmp", revenue: Math.round(totalRevenue * 0.28 * 100) / 100, transactions: Math.round(totalCount * 0.28), percentage: 28 },
   ];
 
   const platformBreakdown: Record<string, any> = {};

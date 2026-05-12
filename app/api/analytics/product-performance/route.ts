@@ -22,11 +22,11 @@ export async function GET() {
     topProducts, bottomProducts, categorySplit,
     categorySplitFoodDrinks:{Food:28640.5,Drinks:92640.25,Other:21441.0,FoodPct:20.1,DrinksPct:64.9,OtherPct:15.0},
     totalProducts:24, hasProductData:true,
-    availableStores:["Noas Cafe Manchester","Noas Cafe Leeds","Noas Cafe Birmingham"],
+    availableStores:["Demo Cafe Manchester","Demo Cafe Leeds","Demo Cafe Birmingham"],
     byStore:[
-      {storeName:"Noas Cafe Manchester",topProducts:topProducts.slice(0,3),bottomProducts:bottomProducts,totalProducts:12,totalRevenue:54231.5,othersRevenue:4320.5,othersCount:7,othersQuantity:432},
-      {storeName:"Noas Cafe Leeds",topProducts:topProducts.slice(1,4),bottomProducts:bottomProducts,totalProducts:11,totalRevenue:48670.25,othersRevenue:3890.25,othersCount:6,othersQuantity:389},
-      {storeName:"Noas Cafe Birmingham",topProducts:topProducts.slice(2,5),bottomProducts:bottomProducts,totalProducts:10,totalRevenue:39820.0,othersRevenue:3180.0,othersCount:5,othersQuantity:318},
+      {storeName:"Demo Cafe Manchester",topProducts:topProducts.slice(0,3),bottomProducts:bottomProducts,totalProducts:12,totalRevenue:54231.5,othersRevenue:4320.5,othersCount:7,othersQuantity:432},
+      {storeName:"Demo Cafe Leeds",topProducts:topProducts.slice(1,4),bottomProducts:bottomProducts,totalProducts:11,totalRevenue:48670.25,othersRevenue:3890.25,othersCount:6,othersQuantity:389},
+      {storeName:"Demo Cafe Birmingham",topProducts:topProducts.slice(2,5),bottomProducts:bottomProducts,totalProducts:10,totalRevenue:39820.0,othersRevenue:3180.0,othersCount:5,othersQuantity:318},
     ],
   });
 }

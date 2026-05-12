@@ -143,7 +143,7 @@ function Sidebar() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const navRef = useRef<HTMLElement>(null);
-  const SCROLL_KEY = 'noas_sidebar_scroll';
+  const SCROLL_KEY = 'sidebar_scroll';
 
   // Restore and persist scroll position across navigations
   useEffect(() => {

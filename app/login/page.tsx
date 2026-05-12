@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Button } from '../components/ui';
 
-const DEMO_EMAIL = 'demo@noas.uk';
+const DEMO_EMAIL = 'demo@dashboard.com';
 const DEMO_PASSWORD = 'demo1234';
 
 export default function LoginPage() {

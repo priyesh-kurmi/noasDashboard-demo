@@ -5,7 +5,7 @@ const labels = ["10 Mar","17 Mar","24 Mar","31 Mar","7 Apr","14 Apr","21 Apr","2
 const spends = [3120,2980,3340,3210,3580,3420,3760,3890];
 const sales =  [13200,12800,14100,13500,15200,14600,15900,16300];
 const storeRatios = [0.39,0.35,0.26];
-const storeNames = ["Noas Cafe Manchester","Noas Cafe Leeds","Noas Cafe Birmingham"];
+const storeNames = ["Demo Cafe Manchester","Demo Cafe Leeds","Demo Cafe Birmingham"];
 export async function GET() {
   const weeklySpend = weeks.map((w,i) => ({
     week:w, label:labels[i], spend:spends[i], sales:sales[i],

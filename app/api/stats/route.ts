@@ -26,7 +26,7 @@ export async function GET(request: NextRequest) {
     lastUploadDate: "2025-05-10T14:32:00.000Z",
     dataStartDate: "2024-06-01T00:00:00.000Z",
     dataEndDate: "2025-05-12T00:00:00.000Z",
-    distinctStores: ["Noas Cafe Manchester","Noas Cafe Leeds","Noas Cafe Birmingham"],
-    lastUpload: { storeName:"Noas Cafe Manchester", lastUploaded:"2025-05-10T14:32:00.000Z" },
+    distinctStores: ["Demo Cafe Manchester","Demo Cafe Leeds","Demo Cafe Birmingham"],
+    lastUpload: { storeName:"Demo Cafe Manchester", lastUploaded:"2025-05-10T14:32:00.000Z" },
   });
 }

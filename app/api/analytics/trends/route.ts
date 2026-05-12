@@ -26,9 +26,9 @@ export async function GET() {
     ],
     salesTrendWeekly, salesTrendMonthly,
     topProductByStore: [
-      {storeName:"Noas Cafe Manchester",topProduct:"Flat White",revenue:8200},
-      {storeName:"Noas Cafe Leeds",topProduct:"Cappuccino",revenue:6100},
-      {storeName:"Noas Cafe Birmingham",topProduct:"Croissant",revenue:4900},
+      {storeName:"Demo Cafe Manchester",topProduct:"Flat White",revenue:8200},
+      {storeName:"Demo Cafe Leeds",topProduct:"Cappuccino",revenue:6100},
+      {storeName:"Demo Cafe Birmingham",topProduct:"Croissant",revenue:4900},
     ],
     bestDayOfWeek: {day:6,dayName:"Saturday",orders:621,revenue:15432,aov:24.85},
     worstDayOfWeek: {day:1,dayName:"Monday",orders:312,revenue:7821,aov:25.07},

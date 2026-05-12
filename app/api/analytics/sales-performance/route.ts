@@ -27,14 +27,14 @@ export async function GET(request: NextRequest) {
     breakdown, periodLabel:period==="monthly"?"Monthly":"Weekly",
     currentPeriodLabel:cur.label, lastPeriodLabel:prev?.label??"",
     salesByStore: [
-      {storeName:"Noas Cafe Manchester",platform:"tmp",sales:54231.5,orders:2134},
-      {storeName:"Noas Cafe Leeds",platform:"tmp",sales:48670.25,orders:1921},
-      {storeName:"Noas Cafe Birmingham",platform:"tmp",sales:39820.0,orders:1583},
+      {storeName:"Demo Cafe Manchester",platform:"tmp",sales:54231.5,orders:2134},
+      {storeName:"Demo Cafe Leeds",platform:"tmp",sales:48670.25,orders:1921},
+      {storeName:"Demo Cafe Birmingham",platform:"tmp",sales:39820.0,orders:1583},
     ],
     availableStores: [
-      {storeName:"Noas Cafe Manchester",platform:"tmp"},
-      {storeName:"Noas Cafe Leeds",platform:"tmp"},
-      {storeName:"Noas Cafe Birmingham",platform:"tmp"},
+      {storeName:"Demo Cafe Manchester",platform:"tmp"},
+      {storeName:"Demo Cafe Leeds",platform:"tmp"},
+      {storeName:"Demo Cafe Birmingham",platform:"tmp"},
     ],
   });
 }

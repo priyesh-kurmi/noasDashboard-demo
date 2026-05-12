@@ -1,9 +1,9 @@
 ﻿// DEMO MODE
 import { NextResponse } from "next/server";
 const DEMO_STORES = [
-  {storeName:"Noas Cafe Manchester",platform:"tmp"},
-  {storeName:"Noas Cafe Leeds",platform:"tmp"},
-  {storeName:"Noas Cafe Birmingham",platform:"tmp"},
+  {storeName:"Demo Cafe Manchester",platform:"tmp"},
+  {storeName:"Demo Cafe Leeds",platform:"tmp"},
+  {storeName:"Demo Cafe Birmingham",platform:"tmp"},
 ];
 export async function GET() {
   const hourlyPattern = [0,0,0,0,0,0,5,48,142,198,187,164,192,178,155,143,121,98,72,43,28,14,6,2];
